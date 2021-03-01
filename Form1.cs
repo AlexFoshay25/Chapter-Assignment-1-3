@@ -30,7 +30,7 @@ namespace Chapter_Assignment_1_3
 
             height = Convert.ToDouble(txtHeight.Text);
             double tallman = 2.72 - height;
-            double heigh = Math.Round(tallman, 2);
+            double heightFinal = Math.Round(tallman, 2);
 
 
 
@@ -38,18 +38,8 @@ namespace Chapter_Assignment_1_3
 
             lblStateA.Text = $"You're currently {exp} years away from the average life expectancy.";
 
-            lblStateH.Text = $"The tallest man in the world is { heigh } m taller than you.";
+            lblStateH.Text = $"The tallest man in the world is {heightFinal} m taller than you.";
 
-
-        }
-
-        private void numUD_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
 
         }
 
