@@ -12,9 +12,51 @@ namespace Chapter_Assignment_1_3
 {
     public partial class Form1 : Form
     {
+        double height;
+        int age;
+        string name;
+
         public Form1()
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            name = txtName.Text;
+
+            age = Convert.ToInt32(numUD.Value);
+            int exp = 82 - age;
+
+            height = Convert.ToDouble(txtHeight.Text);
+            double tallman = 2.72 - height;
+            double heigh = Math.Round(tallman, 2);
+
+
+
+            lblState.Text = $"Hello {name},";
+
+            lblStateA.Text = $"You're currently {exp} years away from the average life expectancy.";
+
+            lblStateH.Text = $"The tallest man in the world is { heigh } m taller than you.";
+
+
+        }
+
+        private void numUD_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
+    
 }
